@@ -1,131 +1,58 @@
-# 0x01. Fix my code
+# 0x01 Fix My Code Challenge
+
+This project involves fixing existing code in various programming languages. The primary goal is to address issues without recoding everything.
 
 ## Background Context
 
-``Fix my code`` is a new type of project, where we’ll jump into an existing code base and fix it!
+Fix My Code is a unique project where the task is to dive into an existing codebase and resolve issues, whether familiar with the language or not. The repository [0x01-Fix_My_Code_Challenge](https://github.com/username/0x01-Fix_My_Code_Challenge) serves as the initial files for all solutions. The project is optional but can contribute over 100% to your average grade. Remember, your score won't be affected if you choose not to participate, but your average might go down if your current average is greater than your score on this project.
 
-Sometime you will know the language, sometime not.
+## Requirements
 
-Please download the repository [0x01-``Fix_My_Code_Challenge``](https://github.com/holbertonschool/0x01-``Fix_My_Code_Challenge``) and use it as initial files for all solutions.
+- Allowed editors: vi, vim, emacs
+- Compilation on Ubuntu 14.04 LTS
+- Files should end with a new line
+- A mandatory README.md file at the root of the project folder
 
-You should not recode everything, just fix it!
+## More Info
 
-**This project is NOT mandatory** at all. It is 100% optional. Doing any part of this project will add a project grade of over 100% to your average. Your score won’t get hurt if you don’t do it, but if your current average is greater than your score on this project, your average might go down. Have fun!
+### Manual QA Review
 
-# Requirements
+It is your responsibility to request a review from a peer before the project's deadline. If no peers are available, request a review from a TA or staff member.
 
-## General
+## Tasks
 
-* Allowed editors: vi, vim, emacs
-* All your files will be compiled on Ubuntu 14.04 LTS
-* All your files should end with a new line
-* A README.md file, at the root of the folder of the project is mandatory
+### 0. Server status
 
-# More Info
+**Advanced Task**
 
-## Manual QA Review
+I have initiated a Flask project and set up a route for the API status. However, it's not working, and I need your help to fix it. The code can be found [here](https://github.com/username/Fix_My_Code_Challenge/tree/main/0x01-challenge/status_server).
 
-**It is your responsibility to request a review for this project from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.**
+### 1. My square
 
-# Tasks
-## 0. Server status
+**Advanced Task**
 
-#advanced
+I have a love for geometry, and I've created a square. However, it seems not to be perfect. Can you take a look and suggest any necessary changes? The code can be found [here](https://github.com/username/Fix_My_Code_Challenge/tree/main/0x01-challenge/square.py).
 
-I just started a new Flask project and the first thing I’m putting in place is a route for the status of my API (super important for a load balancer implementation).
+### 2. Step 2: User model
 
-But I don’t know why it’s not working…
+**Advanced Task**
 
-Could you look at it and fix it please?
+I've started an Object-Oriented Programming (OOP) project, but nothing seems to work. Can you help me out? The code can be found [here](https://github.com/username/Fix_My_Code_Challenge/tree/main/0x01-challenge/user.py).
 
-My code is [here](https://github.com/holbertonschool/0x01-``Fix_My_Code_Challenge``/tree/master/status_server/)
-```
-$ python -m api.v1.app 
- * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
-....
-```
+### 3. Blog access
 
-```
-$ curl -XGET http://0.0.0.0:5000/api/v1/status
-{
-  "error": "Not found"
-}
-$
-```
+**Advanced Task**
 
-**Repo:**
+I've completed and deployed my Rails blog, but users are reporting issues accessing blog posts. Additionally, I want to add a boolean 'online' for each Post object with a default value of true. This boolean will allow me to hide/show some blog posts from the listing. I'll also need a way to change this boolean in the Post#edit route. The code base is available [here](https://github.com/username/Fix_My_Code_Challenge/tree/main/0x01-challenge/blog).
 
-* GitHub repository: ``Fix_My_Code_Challenge``
-* Directory: ``0x01-challenge``
-* File: [status_server/](./status_server/)
-  
-## 1. My square
+### 4. Never leave the office
 
-#advanced
+**Advanced Task**
 
-I love geometry!
+After returning from a holiday, I discovered that my marketing co-worker broke the website. Let's fix it! There's also a pagination issue that needs attention. The code is located [here](https://github.com/username/Fix_My_Code_Challenge/tree/main/0x01-challenge/react-blog).
 
-Look [my square](https://github.com/holbertonschool/0x01-Fix_My_Code_Challenge/blob/master/square.py), it’s perfect? No? Should I change something?
+## How to Use
 
-**Repo:**
-
-* GitHub repository: ``Fix_My_Code_Challenge``
-* Directory: ``0x01-challenge``
-* File: [square.py](./square.py/)
-  
-## 2. Step 2: User model
-
-#advanced
-
-I’m running into a serious problem!
-
-I just start my OOP project and nothing works…
-
-Could you help me please? My code is [here](https://github.com/holbertonschool/0x01-Fix_My_Code_Challenge/blob/master/user.py).
-
-Thank you!
-
-**Repo:**
-
-* GitHub repository: ``Fix_My_Code_Challenge``
-* Directory: ``0x01-challenge``
-* File: [user.py](./user.py/)
-  
-## 3. Blog access
-
-#advanced
-
-I finished and deployed my Rails blog but people are contacting me because they can’t access any of my blog posts… Weird, it works for me…
-
-Could you take a look and fix it? My code base is [here](https://github.com/holbertonschool/0x01-Fix_My_Code_Challenge/tree/master/blog).
-
-Also, when you’re done, could you add a new feature please?
-
-I would like to add a boolean ``online`` for each ``Post`` object with a default value ``true``. With this boolean, I will be able to hide/show some blog posts from the listing. I will also need a way to change this boolean in the ``Post#edit`` route. Could you do this for me?
-
-Thank you!
-
-**Repo:**
-
-* GitHub repository: ``Fix_My_Code_Challenge``
-* Directory: ``0x01-challenge``
-* File: [blog](./blog/)
- 
-## 4. Never leave the office
-
-#advanced
-
-I’m coming back from 2 weeks of holidays in France and when I arrived at the office, the first words from my marketing co-worker were: “Hi, how was your holiday? by the way, I think I broke the website…”
-
-**WHAT???**
-
-Ok, let’s jump on it and [fix it](https://github.com/holbertonschool/0x01-Fix_My_Code_Challenge/tree/master/react-blog)!
-
-Arf, I have also the pagination to fix… I didn’t have time before my break to look at it…
-
-**Repo:**
-
-* GitHub repository: ``Fix_My_Code_Challenge``
-* Directory: ``0x01-challenge``
-* File: [react-blog](./react-blog/)
-#Author Jerome Udoh/ twitter #udohjerome #jubasstech
+1. Clone this repository: \`git clone https://github.com/username/0x01-Fix_My_Code_Challenge.git\`
+2. Navigate to the project folder: \`cd 0x01-Fix_My_Code_Challenge\`
+3. Follow the instructions for each task in their respective directories.
